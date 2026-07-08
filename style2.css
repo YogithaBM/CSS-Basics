@@ -1,0 +1,23 @@
+p{
+    color: black;
+    size: 0vi;
+}
+
+.bClass{
+    color: yellow;
+    font-display: fallback;
+    background-color:rgb(17, 22, 17);
+
+}
+
+b{
+    color: rgb(31, 192, 31);
+    font-size: larger;
+}
+
+#pId{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: darkblue;
+
+}
+
