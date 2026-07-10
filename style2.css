@@ -4,14 +4,15 @@ p{
 }
 
 .bClass{
-    color: yellow;
+    color: rgb(0, 187, 255);
     font-display: fallback;
-    background-color:rgb(17, 22, 17);
+    background-color:rgb(236, 240, 236);
 
 }
 
 b{
-    color: rgb(31, 192, 31);
+
+    color: rgb(95, 175, 209);
     font-size: larger;
 }
 

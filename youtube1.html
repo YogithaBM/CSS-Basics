@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Clone</title>
+    <link rel="stylesheet" href="styleyt2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-left">
+            <button class="icon-btn hamburger-btn"><i class="fa-solid fa-bars"></i></button>
+            <div class="logo-container">
+                <i class="fa-brands fa-youtube logo-icon"></i>
+                <span class="logo-text">YouTube</span>
+                <span class="country-code">IN</span>
+            </div>
+        </div>
+
+        <div class="nav-center">
+            <div class="search-container">
+                <form class="search-form" onsubmit="event.preventDefault();">
+                    <input type="text" class="search-input" placeholder="Search">
+                    <button type="submit" class="search-btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </div>
+            <button class="icon-btn voice-btn"><i class="fa-solid fa-microphone"></i></button>
+        </div>
+
+        <div class="nav-right">
+            <button class="create-btn">
+                <i class="fa-solid fa-plus"></i>
+                <span>Create</span>
+            </button>
+            <button class="icon-btn bell-btn">
+                <i class="fa-regular fa-bell"></i>
+            </button>
+            <div class="profile-container">
+                <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=32&h=32" alt="Profile" class="profile-img">
+            </div>
+        </div>
+    </header>
+
+    <aside class="sidebar">
+        <div class="sidebar-item active">
+            <i class="fa-solid fa-house"></i>
+            <span>Home</span>
+        </div>
+        <div class="sidebar-item">
+            <i class="fa-solid fa-bolt"></i>
+            <span>Shorts</span>
+        </div>
+        <div class="sidebar-item">
+            <i class="fa-solid fa-layer-group"></i>
+            <span>Subscriptions</span>
+        </div>
+        <div class="sidebar-item">
+            <i class="fa-regular fa-circle-user"></i>
+            <span>You</span>
+        </div>
+    </aside>
+
+    <main class="app-container">
+        <div class="category-bar">
+            <div class="chip active">All</div>
+            <div class="chip">Music</div>
+            <div class="chip">Human evolution</div>
+            <div class="chip">Mixes</div>
+            <div class="chip">Stewie Griffin</div>
+            <div class="chip">Kurzgesagt – In a Nutshell</div>
+            <div class="chip">Media theories</div>
+            <div class="chip">Formula 1</div>
+            <div class="chip">Empires</div>
+            <div class="chip">Xilam</div>
+            <div class="chip">Live</div>
+            <div class="chip">Comic books</div>
+            <div class="chip">Dramedy</div>
+            <div class="category-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+        </div>
+
+        <div class="video-grid">
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <iframe width="460" height="315" src="https://www.youtube.com/embed/JS0BWMcPSSk?si=BOWS6UaBmTwaBrcs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <span class="duration-badge"><i class="fa-solid fa-list-ul" style="margin-right: 4px;"></i> Mix</span>
+                </div>
+                <div class="card-details">
+                    <div class="channel-icon-placeholder mix-bg">
+                        <i class="fa-solid fa-music"></i>
+                    </div>
+                    <div class="card-text">
+                        <h3 class="video-title">BOYNEXTDOOR (보이넥스트도어) - VIRAL 교차편집 (Stage Mix)</h3>
+                        <p class="channel-name">GONGCHIL</p>
+                    </div>
+                    <button class="menu-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7GXtwVefkHU?si=njhXT3BtK4ZtZNC8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <span class="duration-badge">3:14</span>
+                </div>
+                <div class="card-details">
+                    <div class="channel-icon-placeholder f1-bg">
+                        <i class="fa-solid fa-flag-checkered"></i>
+                    </div>
+                    <div class="card-text">
+                        <h3 class="video-title">ONE N' ONLY／ “SAVIOR” Music Video</h3>
+                        <p class="channel-name">ONE N' ONLY TV<i class="fa-solid fa-circle-check verification-tick"></i></p>
+                        <p class="metadata">3.7m views • 17 hours ago</p>
+                    </div>
+                    <button class="menu-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/lArmmhL5voE?si=rJw4Pt8Rjf_L6mcY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <span class="duration-badge">3:12</span>
+                </div>
+                <div class="card-details">
+                    <div class="channel-icon-placeholder show-bg">
+                        <i class="fa-solid fa-microphone-lines"></i>
+                    </div>
+                    <div class="card-text">
+                        <h3 class="video-title">Ayumu Imazu - BANDAGE [Official Video]</h3>
+                        <p class="channel-name">Ayumu Imazu</p>
+                        <p class="metadata">238k views • 3 weeks ago</p>
+                    </div>
+                    <button class="menu-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/pGxN5BYWssU?si=eVTxiDDrKsWYjUiG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <span class="duration-badge">3:34</span>
+                </div>
+                <div class="card-details">
+                    <div class="channel-icon-placeholder generic-bg">17</div>
+                    <div class="card-text">
+                        <h3 class="video-title">𝗩𝟴 'girlsnboys' Official Visualizer</h3>
+                        <p class="channel-name">SEVENTEEN</p>
+                        <p class="metadata">450k views • 2 days ago</p>
+                    </div>
+                    <button class="menu-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2JTBSa7XsjE?si=K4tuuwMjN-p6uaV9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <span class="duration-badge">2:48</span>
+                </div>
+                <div class="card-details">
+                    <div class="channel-icon-placeholder generic-bg">👁️</div>
+                    <div class="card-text">
+                        <h3 class="video-title">'Trendsetter' X 'HUMBLE.' covered by ENHYPEN NI-KI(니키) | May 2024 | Artist Of The Month (4K)</h3>
+                        <p class="channel-name">STUDIO CHOOM </p>
+                        <p class="metadata">1.1m views • 5 days ago</p>
+                    </div>
+                    <button class="menu-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <div class="thumbnail-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/DxeJ9dhy7_M?si=2WliqRlftO7eznrA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <span class="duration-badge">5:40</span>
+                </div>
+                <div class="card-details">
+                    <div class="channel-icon-placeholder generic-bg">🎨</div>
+                    <div class="card-text">
+                        <h3 class="video-title">BOYNEXTAGE | 'Bling-Bang-Bang-Born' Stage CAM @ ‘KNOCK ON Vol.1’ ENCORE IN JAPAN</h3>
+                        <p class="channel-name">BOYNEXTDOOR</p>
+                        <p class="metadata">920k views • 1 week ago</p>
+                    </div>
+                    <button class="menu-btn"><i class="fa-solid fa-ellipsis-vertical"></i></button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
