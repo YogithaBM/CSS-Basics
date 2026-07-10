@@ -290,14 +290,12 @@ body {
 }
 
 /* VIDEO GRID */
-.video-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr)); /* Keeps exactly 3 items in a line */
-    column-gap: 16px;
-    row-gap: 40px;
+.video-card {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
     width: 100%;
-    box-sizing: border-box; /* Prevents overflow */
-
+    height: auto; /* CRUCIAL: This stops the card from stretching vertically */
 }
 
 /* VIDEO CARDS */
